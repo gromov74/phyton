@@ -1,0 +1,14 @@
+print("""Let`s play a game. 
+  Can you remember word from song?""")
+counter = 0
+while True:
+  counter += 1
+  word = input("""  I`m a dog,
+  My name is Laika,
+  My mission is to be like:
+  """)
+  if word == "austronaut" or word == "Austronaut":
+    print("Good!", "You found an answer from", counter, "ones. I like Ice MC too")
+    break
+  else:
+    print("Not correct. try again")
