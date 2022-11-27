@@ -1,0 +1,7 @@
+print("""You want take a money over 10 years with 5% APR """)
+print()
+money = 1000
+apr = 0.05
+for counter in range(10):
+  money += (money * apr)
+  print("Year", counter+1, "is", round(money,2))
