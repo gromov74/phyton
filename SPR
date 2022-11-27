@@ -1,0 +1,52 @@
+print("""Please input capitalized letters for each Players
+in order one by one""")
+counter1 = 0
+counter2 = 0
+
+while True:
+ 
+    player1 = input("Player1>")
+    player2 = input("Player2>")
+
+ 
+    if player1 == "R" or player1 == "r":
+      if player2 == "R" or player2 == "r":
+        print("For win try again")
+      elif player2 == "S" or player2 == "s":
+        counter1 += 1
+        print("player1 - win!", counter1)
+        
+      elif player2 == "P" or player2 == "p":
+        counter1 += 1
+        print("player1 - win!", counter1)
+        
+    elif player1 == "S" or player1 == "s":
+      
+      if player2 == "R" or player2 =="r":  
+        counter2 += 1
+        print("player2 - win!", counter2)
+        
+      elif player2 == "P" or player2 == "p":
+        counter1 += 1
+        print("player1 - win!", counter1)
+        
+      elif player2 == "S" or player2 == "s":
+        print("For win try again")
+    elif player1 == "P" or player1 == "p":
+      
+      if player2 == "R" or player2 =="r":  
+        counter2 += 1
+        print("player2 - win!", counter2)
+        
+      elif player2 == "P" or player2 == "p":
+        print("For win try again")
+        
+      elif player2 == "S" or player2 == "s":
+        counter2 += 1
+        print("player2 - win!", counter2)
+        
+    if counter1 == 3 or counter2 == 3:
+      print("Game over!")
+      break
+    else:
+      continue
