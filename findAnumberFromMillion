@@ -1,0 +1,44 @@
+print("""Let`s play a game. 
+  Can you find a number which I save?""")
+
+counter = 0
+while True:
+  numPerson1 = int(input("""Save a number here
+  in order betwin 0 and 1000000 > """))
+
+  if numPerson1 < 0 or numPerson1 > 1000000:
+    print("Your number OUT OF RANGE")
+  else:
+    break
+
+while True:
+  counter += 1
+  numPerson2 = int(input("""Tape here a number which I saved
+  in order betwin 0 and 1000000 > """))
+
+  if numPerson2 < 0:
+    
+    print("You enter", numPerson2)
+    print("Number lower of range, please input higher zero")
+
+  elif numPerson2 > 1000000:
+    
+    print("You enter", numPerson2)
+    print("Number higher of range, please input lower of million")
+  
+  
+  elif numPerson1 < numPerson2:
+    
+    print("You enter", numPerson2)
+    print("My number lower, please try again")                       
+  elif numPerson1 > numPerson2:
+
+      print("You enter", numPerson2)
+      print("My number higher, plaese try again")
+      
+  elif numPerson1 == numPerson2:
+    
+    print("You find my number, it`s was", numPerson1,             "Congratulations! You got my number from", counter, "ones.")
+    break
+  else:
+    continue
