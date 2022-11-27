@@ -1,0 +1,35 @@
+import random
+
+myNumber = random.randint(1, 1000000)
+for i in range(1):
+  print(myNumber)
+  print("""Let`s play a game. 
+  Can you find a number which II save?""")
+
+counter = 0
+
+numPerson1 = myNumber
+
+while True:
+  counter += 1
+  numPerson2 = int(input("""Tape here a number which I saved
+  in order betwin 0 and 1000000 > """))
+
+  if numPerson2 < 0 or numPerson2 > 1000000:
+    print("Your number OUT OF RANGE")
+  
+  elif numPerson1 < numPerson2:
+    
+    print("You enter", numPerson2)
+    print("My number lower, please try again")                       
+  elif numPerson1 > numPerson2:
+
+      print("You enter", numPerson2)
+      print("My number higher, plaese try again")
+      
+  elif numPerson1 == numPerson2:
+    
+    print("You find my number, it`s was", numPerson1,             "Congratulations! You got my number from", counter, "ones.")
+    break
+  else:
+    continue
